@@ -1,0 +1,9 @@
+[package]
+name = "rust-analyzer-env-var-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sqlx = {version = "0.7.4", features = ["sqlite","macros", "tls-rustls", "runtime-tokio", "uuid"]}
+#keep this fixed at 1.3 as that version expresses the rustflags behavior
+uuid = {version = "=1.3.0", features = ["v7"]}
